@@ -1,9 +1,11 @@
 package bitbee
 
 class Role {
-
 	String authority
-	
-    static constraints = {
-    }
+
+	static mapping = { cache true }
+
+	static constraints = {
+		authority blank: false, unique: true
+	}
 }

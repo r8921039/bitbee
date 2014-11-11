@@ -1,14 +1,11 @@
 package bitbee
 
-import java.util.Set;
-
 import bitbee.Role;
 import bitbee.User;
 
 import grails.plugins.springsecurity.SpringSecurityService;
 import grails.transaction.Transactional
 
-@Transactional
 class SecurityService {
 	static transactional = false
 
@@ -21,11 +18,5 @@ class SecurityService {
 
 	boolean isLoggedIn() {
 		springSecurityService.isLoggedIn()
-	}
-
-	boolean currentUserHasRole(RoleDef role) {
-		// alternatively, we could use: SpringSecurityUtils.ifAnyGranted()
-		User currentUser = getCurrentUser()
-		currentUser?.hasRole(role)
 	}
 }

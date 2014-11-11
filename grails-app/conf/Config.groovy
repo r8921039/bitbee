@@ -63,6 +63,41 @@ grails {
     }
 }
 
+// Spring Security
+grails.plugins.springsecurity.auth.loginFormUrl = '/login/index'
+grails.plugins.springsecurity.logout.afterLogoutUrl = '/'
+grails.plugins.springsecurity.successHandler.defaultTargetUrl = '/chart/index'
+grails.plugins.springsecurity.failureHandler.defaultFailureUrl = '/login/failed'
+grails.plugins.springsecurity.adh.errorPage = '/login/error'
+
+grails.plugins.springsecurity.userLookup.userDomainClassName = bitbee.User.name
+grails.plugins.springsecurity.authority.className = bitbee.Role.name
+grails.plugins.springsecurity.userLookup.authorityJoinClassName = bitbee.UserRole.name
+
+grails.plugins.springsecurity.apf.usernameParameter = 'username'
+grails.plugins.springsecurity.apf.passwordParameter = 'password'
+grails.plugins.springsecurity.password.algorithm = 'bcrypt'
+grails.plugins.springsecurity.userLookup.usernamePropertyName = 'username'
+
+grails.plugins.springsecurity.apf.postOnly = false
+
+//grails.plugins.springsecurity.rejectIfNoRule = false
+//grails.plugins.springsecurity.fii.rejectPublicInvocations = false
+//grails.plugins.springsecurity.securityConfigType = "Annotation"
+//grails.plugins.springsecurity.controllerAnnotations.staticRules = [
+//	'/':               ['permitAll'],
+//	'/index':          ['permitAll'],
+//	'/index.gsp':      ['permitAll'],
+//	'/assets/**':      ['permitAll'],
+//	'/**/js/**':       ['permitAll'],
+//	'/**/css/**':      ['permitAll'],
+//	'/**/images/**':   ['permitAll'],
+//	'/**/favicon.ico': ['permitAll'],
+//	'/login/**': 	   ['permitAll']
+// ]
+//grails.plugin.springsecurity.useBasicAuth = true
+//grails.plugin.springsecurity.basic.realmName = "bitbee~ won won won~"
+
 
 grails.converters.encoding = "UTF-8"
 // scaffolding templates configuration
@@ -103,9 +138,9 @@ environments {
 log4j = {
     // Example of changing the log pattern for the default console appender:
     //
-    //appenders {
-    //    console name:'stdout', layout:pattern(conversionPattern: '%c{2} %m%n')
-    //}
+    appenders {
+        console name:'stdout', layout:pattern(conversionPattern: '%c{2} %m%n')
+    }
 
     error  'org.codehaus.groovy.grails.web.servlet',        // controllers
            'org.codehaus.groovy.grails.web.pages',          // GSP
@@ -118,4 +153,11 @@ log4j = {
            'org.springframework',
            'org.hibernate',
            'net.sf.ehcache.hibernate'
+		   
+    trace  'org.springframework.security.web.authentication.rememberme',
+		   'org.springframework.security.web.authentication',
+		   'org.springframework.security.web',
+		   'org.springframework.security'
+		   
+    info 'grails.app'
 }

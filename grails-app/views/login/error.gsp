@@ -1,18 +1,24 @@
-<!DOCTYPE html>
 <html>
 	<head>
-		<title><g:if env="development">Grails Runtime Exception</g:if><g:else>Error</g:else></title>
-		<meta name="layout" content="main">
-		<g:if env="development"><link rel="stylesheet" href="${resource(dir: 'css', file: 'errors.css')}" type="text/css"></g:if>
+		<meta name="layout" content="main" />
+		<title>login</title>
+		<link href="${resource(dir: 'css', file: 'signin.css')}" rel="stylesheet">
 	</head>
+	
 	<body>
-		<g:if env="development">
-			<g:renderException exception="${exception}" />
-		</g:if>
-		<g:else>
-			<ul class="errors">
-				<li>An error has occurred</li>
-			</ul>
-		</g:else>
+		<div class="container">		
+			<h2 class="form-signin-heading">Oops,Error!</h2>
+			<g:form class="form-signin" role="form" url="/bitbee/login/index" method="POST">
+				<button class="btn btn-lg btn-primary btn-block" type="submit">Log back in..</button>
+			</g:form>
+		</div>
+		<div class="container">	
+			<h2 class="form-signin-heading"></h2>
+		</div>
+		<div class="container">
+			<g:form class="form-signin" role="form" url="/bitbee/login/logout" method="POST">
+				<button class="btn btn-lg btn-primary btn-block" type="submit">Log out..</button>
+			</g:form>
+		</div>
 	</body>
 </html>
