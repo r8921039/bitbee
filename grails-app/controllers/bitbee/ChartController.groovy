@@ -8,4 +8,9 @@ class ChartController {
     def index() { 
 		log.info "chart index"
 	}
+	
+	@Secured(['ROLE_ADMIN'])
+	def adminOnly() {
+		log.info "admin only!!"
+	}
 }

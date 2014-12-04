@@ -7,7 +7,7 @@
 	
 	<body>
 		<div class="container">
-			<a href="/bitbee/chart/adminOnly" class="skip"><g:message code="default.link.skip.label" default="You are now at Chart. Go to secret chart only for admin@admin. Not for test@test"/></a>
+			<a href="/bitbee/chart/index" class="skip"><g:message code="default.link.skip.label" default="You are now at adminOnly! back to public page"/></a>
 		</div>
 		<div class="container">		
 			<h2 class="form-signin-heading">Yeh, Logged In!</h2>
