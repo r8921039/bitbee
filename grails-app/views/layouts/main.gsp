@@ -17,13 +17,14 @@
 		<link href="${resource(dir: 'css', file: 'bootstrap.min.css')}" rel="stylesheet">
 		<link href="${resource(dir: 'css', file: 'jumbotron.css')}" rel="stylesheet">
 		<script src="${resource(dir: 'js', file: 'ie-emulation-modes-warning.js')}"></script>
+		<r:layoutResources/>
 	</head>
 	<body>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<script src="${resource(dir: 'js', file: 'bootstrap.min.js')}"></script>
 		<script src="${resource(dir: 'js', file: 'ie10-viewport-bug-workaround.js')}"></script>
 		<g:layoutBody/>
-		<r:layoutResources />
+		<r:layoutResources/>
 	</body>
 <%-- 
 	<head>
