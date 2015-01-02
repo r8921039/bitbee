@@ -1,0 +1,622 @@
+.chartRowStandard {
+    display: block;
+    height: 382px;
+    background-color: rgb(120, 120, 120);
+    padding-top: 10px;
+    padding-left: 1%;
+    margin: 0 auto;
+}
+
+.emisChartRowStandard {
+    display: block;
+    height: 450px;
+    background-color: rgb(120, 120, 120);
+    padding-top: 10px;
+    padding-left: 1%;
+    margin: 0 auto;
+}
+
+.chartTable {
+    display: table;
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 98%;
+}
+
+.chartRow {
+    display: table-row;
+}
+
+#currencyChartContainer > .chartCell {
+    display: inline-block;
+    width: 100%;
+}
+
+.chartCellPlaceHolder {
+    -webkit-appearance: none;
+    display: table-cell;
+    height: 470px;
+    width: 48%;
+    vertical-align: middle;
+    background-color: #969696;
+    border: 3px solid;
+    border-radius: 10px;
+    border-color: #666666 #A0A0A0 #A0A0A0 #666666;
+    margin-left: 1%;
+}
+
+.chartCellPlaceHolder {
+    display: block;
+    width: 98%;
+    height: 100%;
+}
+
+.chartCell.stacked {
+    display: block;
+    width: 98%;
+    height: 100%;
+}
+
+.chartMediumButtons {
+    padding-left: 19px;
+    padding-top: 5px;
+    padding-bottom: 12px;
+    text-align: center;
+}
+
+.chartMediumButtons.noPadding {
+    padding: 0;
+}
+
+.resetButton {
+    background: url('../../images/ecmskin/menu/transportButtons.png') no-repeat -25px 0;
+    width: 29px;
+    height: 29px;
+    margin-top: 1px;
+}
+
+.resetButton:hover {
+    background: url('../../images/ecmskin/menu/transportButtons.png') no-repeat -25px -29px;
+}
+
+.resetButton.enabled {
+    background: url('../../images/ecmskin/menu/transportButtons.png') no-repeat -25px -29px;
+}
+
+#backwardButton {
+    background: url('../../images/ecmskin/menu/transportButtons.png') no-repeat 0 0;
+    width: 20px;
+    height: 28px;
+}
+
+#backwardButton:hover {
+    background: url('../../images/ecmskin/menu/transportButtons.png') no-repeat 0 -30px;
+}
+
+#backwardButton.disabled {
+    background: url('../../images/ecmskin/menu/transportButtons.png') no-repeat 0 -60px;
+}
+
+#forwardButton {
+    background: url('../../images/ecmskin/menu/transportButtons.png') -59px 0;
+    width: 20px;
+    height: 28px;
+}
+
+#forwardButton:hover {
+    background: url('../../images/ecmskin/menu/transportButtons.png') no-repeat -59px -29px;
+}
+
+#forwardButton.disabled {
+    background: url('../../images/ecmskin/menu/transportButtons.png') no-repeat -59px -59px;
+}
+
+#mediaButtons {
+    padding: 0 2px;
+}
+
+.mediaButton {
+    display: inline-block;
+}
+
+.start {
+    display: inline-block;
+    background: url('../../images/ecmskin/menu/transportButtons.png') no-repeat -83px 0;
+    width: 28px;
+    height: 28px;
+}
+
+.start:hover {
+    background: url('../../images/ecmskin/menu/transportButtons.png') no-repeat -83px -29px;
+}
+
+.stop {
+    background: url('../../images/ecmskin/menu/transportButtons.png') no-repeat -112px 0;
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+}
+
+.stop:hover {
+    background: url('../../images/ecmskin/menu/transportButtons.png') no-repeat -112px -29px;
+}
+
+.plotCaptionContainer {
+    margin-top: 2px;
+    width: 100%;
+}
+
+.plotCaption {
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+}
+
+.plotSubCaption {
+    font-size: 13px;
+    text-align: center;
+    width: 100%;
+}
+
+.plotStatsCaption {
+    font-size: 12px;
+    text-align: center;
+    width: 100%;
+
+}
+
+.chartStandard {
+    background-color: #787878;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+.chartPlot {
+    position: relative;
+    top: 0;
+    min-height: 373px;
+}
+
+.customiseContent {
+    z-index: 9998;
+    position: absolute;
+    right: 0;
+    max-width: 345px;
+    background: transparent url('../../images/ecmskin/customize/bg-grad-repeat-x.png') repeat-x scroll 0 0;
+    background-size: contain;
+    padding: 10px;
+    padding-top: 30px;
+    border-radius: 5px;
+}
+
+#plotFlashMessageContainer {
+    clear: none;
+    float: left;
+    text-align: center;
+    width: 45%;
+    margin: 5px;
+}
+
+.customizeButton {
+    position: relative;
+}
+
+.customizeOptionDisabled {
+    color: rgb(204, 204, 204);
+}
+
+.leftCol {
+    width: 100%;
+}
+
+.middleCol {
+    width: 40%;
+}
+
+.rightCol {
+    width: 20%;
+}
+
+.customizePeriodList {
+    list-style-type: none;
+}
+
+.customiseContentColumn {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.customizeTopRow {
+}
+
+.customizeRightColumn {
+    height: 221px;
+}
+
+.customizeRow {
+    vertical-align: top;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+
+    border: 1px solid #737373;
+    border-left: medium none;
+    border-right: medium none;
+    border-top: medium none;
+}
+
+#graphDisplay, #lineColor {
+    border: 1px solid #737373;
+    border-top: medium none;
+}
+
+div .minus3LMargin {
+    margin-left: -3px;
+}
+
+#dateRange dt {
+    color: rgb(51, 51, 51);
+    margin-top: 2px;
+}
+
+.roundBorder {
+    border-radius: 6px;
+    border: 1px solid #588ca6;
+    color: #999;
+}
+
+.plotResolution {
+    padding-left: 15px;
+}
+
+.vAllignMiddle {
+    vertical-align: middle;
+}
+
+#dateRange dd {
+    padding-bottom: 10px;
+}
+
+p.adjustDateRange {
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+.dateInput {
+    border: 1px solid;
+    -moz-border-radius: 5px;
+    border-color: rgb(102, 102, 102);
+    background-color: rgb(102, 102, 102);
+    color: white;
+    margin-right: 5px;
+}
+
+.placeHolder {
+    margin-top: 10px;
+    min-height: 70px;
+    min-width: 100px;
+    background-color: rgb(102, 102, 102);
+    -moz-border-radius: 5px;
+}
+
+.sliders {
+    list-style: none;
+    padding-left: 10px;
+}
+
+.sliderBarMin {
+    background: url('../../images/ecmskin/customize/control-bar.png') no-repeat;
+    min-height: 90px;
+    min-width: 7px;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.sliderButtonMin {
+    background: url('../../images/ecmskin/customize/control-btn.png') no-repeat;
+    height: 11px;
+    width: 25px;
+    margin-top: 65px;
+    margin-left: -8px;
+}
+
+.sliderBarMax {
+    background: url('../../images/ecmskin/customize/control-bar.png') no-repeat;
+    min-height: 90px;
+    min-width: 7px;
+    display: inline-block;
+    margin-left: 25px;
+}
+
+.sliderButtonMax {
+    background: url('../../images/ecmskin/customize/control-btn.png') no-repeat;
+    height: 11px;
+    width: 25px;
+    margin-top: 20px;
+    margin-left: -8px;
+}
+
+.aslist {
+    list-style: none;
+    margin: 0;
+}
+
+.visible {
+    visibility: hidden;
+}
+
+.aslist li {
+    display: inline;
+    padding: 0 0 0 15px;
+}
+
+.aslist li a img {
+    border-radius: 5px;
+    border: 1px solid;
+    border-color: rgba(204, 255, 102, 0);
+}
+
+.aslist li a img:hover {
+    border-color: rgba(204, 255, 102, 1);
+}
+
+.plotDatesActions {
+    margin-top: 10px;
+}
+
+.customize {
+    float: right;
+    margin-top: 5px;
+}
+
+.customizeTitle {
+    padding-top: 5px;
+}
+
+#colorLines {
+    width: 150px;
+    height: 30px;
+    background: #797979;
+    border: 1px solid #3c3c3c;
+    margin-top: 10px;
+    border-radius: 6px;
+}
+
+#colorLines ul {
+    padding: 5px;
+}
+
+#colorLines ul li {
+    padding: 3px;
+    list-style-type: none;
+    display: block;
+    float: left;
+}
+
+#colorLines ul li a {
+    display: block;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #333;
+    border-radius: 6px;
+}
+
+.actionButtons {
+    background: url('../../images/ecmskin/customize/btn-repeat-x.png') repeat-x;
+    border: 1px solid;
+    border-color: rgba(51, 51, 51, 0.5);
+    border-radius: 6px 6px 6px 6px;
+    width: 90px;
+    height: 22px;
+    cursor: pointer;
+}
+
+.actionButtons:hover {
+    background: url('../../images/ecmskin/customize/btn-hover-repeat-x.png') repeat-x;
+}
+
+.customizeCloseButton {
+    float: right;
+    position: absolute;
+    background-color: rgba(102, 102, 102, 0.5);
+    border-radius: 10px;
+    min-width: 15px;
+    min-height: 15px;
+    margin-left: 100%;
+    left: -20px;
+    top: 10px;
+    cursor: pointer;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#customizeForm {
+    text-align: left;
+}
+
+.filterMenu {
+    float: left;
+    margin: 0 0 25px;
+    visibility: hidden;
+}
+
+.filterSelector {
+    display: block;
+    float: left;
+}
+
+.intervalList {
+    clear: left;
+    z-index: 9997;
+}
+
+.chartTableHeader {
+    text-align: center;
+    font-size: 1.5em;
+    background-color: #2b2b2d;
+    color: #CCCCCC;
+    padding: 5px;
+
+}
+
+#chartContainer {
+    min-height: 830px;
+    clear: both;
+}
+
+.chartHeading {
+    display: block;
+    height: 100%;
+    text-align: center;
+    font-size: 1.2em;
+    color: #666666;
+    padding-top: 20px;
+    clear: both;
+    width: 100%;
+}
+
+.chartCell {
+    margin-top: 1%;
+    display: table-cell;
+    vertical-align: middle;
+    background-color: white;
+}
+
+.chartCell.rightChart {
+    margin-right: 1%;
+    float: right;
+}
+
+.chartCell.leftChart {
+    margin-left: 1%;
+    float: left;
+}
+
+.chartCell:last-child {
+    margin-right: 1%;
+}
+
+.chartCell:first-child {
+    margin-left: 1%;
+}
+
+.transactionPlateTable {
+    background-color: #969696;
+    border: 3px solid;
+    border-color: #666666 #A0A0A0 #A0A0A0 #666666;
+    height: 100%;
+    margin-top: 20px;
+}
+
+.angularGaugeChart {
+    width: 30%;
+    float: right;
+}
+
+.bar2DChart {
+    width: 48%;
+}
+
+.column2DChart {
+    width: 48%;
+}
+
+.heatMapChart {
+    width: 47%;
+    float: left;
+}
+
+.realTimeLineChart {
+    width: 67%;
+    float: left;
+}
+
+.realTimeLineChart, .angularGaugeChart {
+    height: 350px;
+}
+
+.radarChart {
+    width: 30%;
+    float: left;
+}
+
+.zoomLineChart {
+    width: 67%;
+    float: right;
+}
+
+.zoomLineChart.customized {
+    width: 98%;
+    float: left;
+}
+
+.chartRow.heatmap .zoomLineChart {
+    width: 50%;
+}
+
+.chartPlot > span {
+    background-color: #f9f9f9 !important;
+}
+
+.radarChart, .heatMapChart {
+    padding-bottom: 27px;
+}
+
+div.aggregate {
+    height: 25px;
+    padding-top: 5px;
+    padding-right: 5px;
+    font-size: 11px;
+}
+
+.plotStyledSelect {
+    border: 0 none;
+    color: lightgray;
+    display: inline-block;
+    height: 30px;
+    /* Make sure the select is wider than the container so we can clip the arrow */
+    width: 115%;
+    max-width: 115%;
+    min-width: 115%;
+    /* Remove select styling */
+    appearance: none;
+    -webkit-appearance: none;
+    /* Ugly Firefox way of doing it */
+    -moz-appearance: window;
+    text-indent: 0.01px;
+    background: none;
+    outline: none;
+    padding: 6px 19% .4em .8em;
+}
+
+.enabled .plotStyledSelect {
+    cursor: pointer;
+}
+
+.styledSelectContainer {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    max-width: 100%;
+    height: 30px;
+}
+
+.enabled .styledSelectContainer {
+    background: url("../../images/arrow-down.png") no-repeat scroll right 5px center rgba(0, 0, 0, 0);
+}
+
+.subGrayCustomizeItem {
+    display: block;
+    float: left;
+    height: 100%;
+    background: linear-gradient(#403a37, #6c6868, #403a37);
+    text-align: center;
+}
+
+.subGrayCustomizeItem.enabled {
+    color: #CCCCCC;
+    background-image: linear-gradient(#66830d, #88ae20, #66830d);
+}
