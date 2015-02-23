@@ -152,12 +152,13 @@ log4j = {
            'org.codehaus.groovy.grails.orm.hibernate',      // hibernate integration
            'org.springframework',
            'org.hibernate',
-           'net.sf.ehcache.hibernate'
-		   
-    trace  'org.springframework.security.web.authentication.rememberme',
+		   'org.springframework.security.web.authentication.rememberme',
 		   'org.springframework.security.web.authentication',
 		   'org.springframework.security.web',
 		   'org.springframework.security'
 		   
-    info 'grails.app'
+//    info   
+    debug  'grails.app'
+//	trace
 }
+
